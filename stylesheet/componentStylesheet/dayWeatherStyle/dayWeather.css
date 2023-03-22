@@ -1,0 +1,32 @@
+:root {
+  --weather-card-width: 200px;
+  --weather-card-height: 250px;
+}
+
+.weather_simple_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather_simple_data .weather_day_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  width: 1080px;
+  height: 280px;
+}
+.weather_simple_data .weather_day_box .weather_card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-blue-400);
+  border-radius: 35px;
+  width: var(--weather-card-width);
+  height: var(--weather-card-height);
+  margin: 2px;
+}
+
+/*# sourceMappingURL=dayWeather.css.map */
