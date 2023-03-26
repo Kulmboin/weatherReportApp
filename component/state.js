@@ -4,7 +4,7 @@ const setRegionValue = (initialState) => {
   regionValue = new Proxy(initialState, handler);
 
   const handler = {
-    set(target, prop) {
+    set(target, key) {
       if (prop !== null) {
         regionValue = prop;
       }
@@ -23,14 +23,6 @@ const getRegionValue = (initialState) => {
       }
     },
   };
-};
-
-const getHandler = {
-  get(target, prop) {
-    if (prop === null) {
-      all = []; // 지역 모든 번호를 리스트안으로
-    }
-  },
 };
 
 export { regionValue, setRegionValue };
